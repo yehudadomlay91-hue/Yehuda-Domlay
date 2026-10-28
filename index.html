@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portal Layanan Akademik untuk permohonan layanan mahasiswa.">
+  <title>Portal Layanan Akademik</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#konten-utama">Lewati ke konten utama</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-mark" aria-hidden="true">PA</div>
+      <div>
+        <h1 class="brand-name">Portal Layanan Akademik</h1>
+        <p class="brand-subtitle">Layanan administrasi mahasiswa dalam satu tempat</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="Navigasi utama">
+    <div class="nav-inner">
+      <a href="#beranda">Beranda</a>
+      <a href="#layanan">Daftar Layanan</a>
+      <a href="#permohonan">Form Permohonan</a>
+      <a href="#informasi">Informasi</a>
+    </div>
+  </nav>
+
+  <main id="konten-utama">
+    <section class="hero" id="beranda" aria-labelledby="judul-beranda">
+      <p class="eyebrow">Mudah • Jelas • Terjangkau</p>
+      <h2 id="judul-beranda">Urus kebutuhan akademik dengan lebih mudah.</h2>
+      <p>Temukan layanan administrasi mahasiswa dan ajukan permohonan melalui formulir yang tersedia. Pastikan data yang diisi benar sebelum dikirim.</p>
+      <a class="button button-light" href="#layanan">Jelajahi layanan</a>
+    </section>
+
+    <section class="section" id="layanan" aria-labelledby="judul-layanan">
+      <div class="section-heading">
+        <div>
+          <h2 id="judul-layanan">Layanan Akademik</h2>
+          <p>Pilih layanan yang sesuai dengan kebutuhanmu.</p>
+        </div>
+      </div>
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">📄</div>
+          <h3>Surat Aktif Kuliah</h3>
+          <p>Pengajuan surat keterangan bahwa mahasiswa masih terdaftar aktif pada semester berjalan.</p>
+          <a class="text-link" href="#permohonan" aria-label="Ajukan Surat Aktif Kuliah">Ajukan layanan <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">📊</div>
+          <h3>Transkrip Sementara</h3>
+          <p>Permohonan salinan nilai sementara untuk keperluan administrasi atau persyaratan tertentu.</p>
+          <a class="text-link" href="#permohonan" aria-label="Ajukan Transkrip Sementara">Ajukan layanan <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">🗓️</div>
+          <h3>Cuti Akademik</h3>
+          <p>Informasi dan permohonan cuti akademik sesuai ketentuan yang berlaku di perguruan tinggi.</p>
+          <a class="text-link" href="#permohonan" aria-label="Ajukan Cuti Akademik">Ajukan layanan <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">🖋️</div>
+          <h3>Legalisir Dokumen</h3>
+          <p>Pengajuan legalisasi salinan dokumen akademik untuk kebutuhan resmi.</p>
+          <a class="text-link" href="#permohonan" aria-label="Ajukan Legalisir Dokumen">Ajukan layanan <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">🎓</div>
+          <h3>Konsultasi Akademik</h3>
+          <p>Permintaan informasi atau konsultasi mengenai proses studi dan administrasi akademik.</p>
+          <a class="text-link" href="#permohonan" aria-label="Ajukan Konsultasi Akademik">Ajukan layanan <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">📁</div>
+          <h3>Perubahan Data</h3>
+          <p>Permohonan bantuan untuk memperbarui data mahasiswa dengan dokumen pendukung yang sesuai.</p>
+          <a class="text-link" href="#permohonan" aria-label="Ajukan Perubahan Data">Ajukan layanan <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="permohonan" aria-labelledby="judul-permohonan">
+      <div class="section-heading">
+        <div>
+          <h2 id="judul-permohonan">Formulir Permohonan</h2>
+          <p>Isi semua kolom wajib yang bertanda <span class="required">*</span>.</p>
+        </div>
+      </div>
+      <div class="form-layout">
+        <aside class="form-note" id="informasi" aria-labelledby="judul-informasi">
+          <h3 id="judul-informasi">Sebelum mengirim</h3>
+          <p>Periksa kembali informasi yang kamu masukkan agar permohonan mudah dipahami.</p>
+          <ul>
+            <li>Gunakan nama lengkap.</li>
+            <li>Masukkan alamat email yang aktif.</li>
+            <li>Pilih satu jenis layanan.</li>
+            <li>Jelaskan keperluan secara singkat dan jelas.</li>
+          </ul>
+        </aside>
+
+        <form class="request-form" id="form-permohonan">
+          <div class="field">
+            <label for="nama">Nama lengkap <span class="required">*</span></label>
+            <input id="nama" name="nama" type="text" autocomplete="name" placeholder="Masukkan nama lengkap" required>
+          </div>
+          <div class="field">
+            <label for="email">Alamat email <span class="required">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="nama@contoh.com" aria-describedby="email-hint" required>
+            <span class="hint" id="email-hint">Contoh format: mahasiswa@kampus.ac.id</span>
+          </div>
+          <div class="field">
+            <label for="nim">Nomor Induk Mahasiswa (NIM)</label>
+            <input id="nim" name="nim" type="text" inputmode="numeric" autocomplete="off" placeholder="Masukkan NIM jika tersedia">
+          </div>
+          <div class="field">
+            <label for="jenis-layanan">Jenis layanan <span class="required">*</span></label>
+            <select id="jenis-layanan" name="jenis-layanan" required>
+              <option value="">-- Pilih jenis layanan --</option>
+              <option value="surat-aktif">Surat Aktif Kuliah</option>
+              <option value="transkrip">Transkrip Sementara</option>
+              <option value="cuti">Cuti Akademik</option>
+              <option value="legalisir">Legalisir Dokumen</option>
+              <option value="konsultasi">Konsultasi Akademik</option>
+              <option value="perubahan-data">Perubahan Data</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="keperluan">Keperluan / keterangan <span class="required">*</span></label>
+            <textarea id="keperluan" name="keperluan" minlength="10" maxlength="500" placeholder="Jelaskan tujuan permohonan (minimal 10 karakter)" aria-describedby="keperluan-hint" required></textarea>
+            <span class="hint" id="keperluan-hint">10–500 karakter.</span>
+          </div>
+          <div class="form-actions">
+            <button class="button" type="submit">Periksa permohonan</button>
+            <button class="button button-reset" type="reset">Kosongkan form</button>
+          </div>
+          <p class="form-status" id="status-form" role="status" aria-live="polite"></p>
+          <p class="hint">Catatan: ini merupakan demonstrasi sisi client. Data tidak dikirim atau disimpan ke server.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p><strong>Portal Layanan Akademik</strong></p>
+      <p>Contoh proyek pembelajaran HTML dan CSS responsif.</p>
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript kecil hanya untuk memberi umpan balik demo setelah validasi HTML.
+    const form = document.querySelector("#form-permohonan");
+    const statusForm = document.querySelector("#status-form");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      statusForm.textContent = "Pemeriksaan berhasil. Formulir valid, tetapi belum dikirim ke server.";
+    });
+
+    form.addEventListener("reset", function () {
+      statusForm.textContent = "";
+    });
+  </script>
+</body>
+</html>
